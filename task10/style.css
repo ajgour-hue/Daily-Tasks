@@ -30,48 +30,39 @@ body{
     to   { --rotate: 360deg; }
 }
 
-/* CARD */
 .card{
-    height: 430px;
-    width: 300px;
-
-    border-radius: 14px;
-    overflow: hidden;
-
-    padding: 4px;  /* IMPORTANT */
-
-    background:
-        linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), red, black, red) border-box;
-
-    animation: rotateBorder 4s  infinite;
-
-    box-shadow: 0 0 40px red;
+    max-width: 300px;
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+  background:
+        linear-gradient(black) padding-box,
+        conic-gradient(from var(--rotate),  black, red , black) border-box;
+  border: 0px solid rgba(255,255 ,255 ,0);
+    animation: rotateBorder 2s  linear infinite;
+    box-shadow: 0 0 0px rgb(255, 0, 157);
+    animation-play-state: paused;
+    transition: all ease 0.2s;
+
+    /* bloom effect */
+    text-shadow: 0 0 0px white;
 }
 
-/* IMAGE */
+.card:hover{
+    animation-play-state: running;
+    /* normally bhi de sakte hai lekin yeh bhi ek tarika hai border ka */
+    border-width: 5px;
+      box-shadow: 0 0 60px rgb(255, 0, 157);
+         text-shadow: 0 0 5px black;
+         transform:scale(1.1);
+}
+
 .card img{
     width: 100%;
     height: 260px;
     object-fit: contain;
-    background: black;
-}
-
-/* CONTENT */
-.content{
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.content h2{
-    font-size: 22px;
-    font-weight: bold;
-}
-.content p{
-    font-size: 14px;
-    opacity: .9;
 }
