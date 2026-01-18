@@ -1,0 +1,137 @@
+@font-face {
+    font-family: game;
+    src: url(./game_over.zip);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-section{
+  height: 8%;
+  width: 65%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.bottom-section{
+     height: 80%;
+    width: 65%;
+    border: 1px solid #ffe9e9;
+    border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 5px;
+     margin-top: 20px;
+}
+
+    .anchor{
+        top:anchor(top);
+         left:anchor(left);
+          right:anchor(right);
+           bottom:anchor(bottom);
+           background:linear-gradient(#dad7d7 , #dad7d7);
+           position: absolute;
+           position-anchor: --some-anchor;
+           transition: all ease 0.2s;
+           mix-blend-mode:difference;
+           pointer-events: none;
+    }
+
+.bottom-section .gola{
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 245, 245);
+    background-color: rgb(29, 28, 28);
+   margin: 12px 12px;
+    cursor: pointer;
+}
+
+.bottom-section .gola:hover{
+    scale: 1.2;
+    background-color: black;
+       anchor-name:  --some-anchor;
+}
+
+
+
+#end {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#end h1{
+    font-family: monospace;
+}
+
+
+.popup{
+    height: 300px;
+    width: 400px;
+    background :  linear-gradient(rgb(103, 103, 191),rgb(50, 50, 159));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+}
+button:active{
+    scale: 1.2;
+}
+
+button:hover{
+    background-color: black;
+    color: #ffe9e9;
+}

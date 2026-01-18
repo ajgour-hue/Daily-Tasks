@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.elem {
+    font-family: monospace;
+    color: aliceblue;
+    height: 150px;
+    width: 500px;
+    background-color: #333;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(117, 117, 253);
+    border: none;
+}
+
+.elem button:active{
+    scale: 1.2;
+}
